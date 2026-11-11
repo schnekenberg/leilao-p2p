@@ -39,14 +39,14 @@ Os prompts abaixo representam cada etapa do desenvolvimento. Para cada um, regis
 - **Aproveitado:** o `RelogioLamport` (`helpers.py`) e a função `supera()` (`leilao.py`): maior valor vence; no empate, vence o menor Lamport e depois o menor id de par.
 - **Adaptado:** criamos a opção `--sem-desempate` para mostrar no experimento RE3 que, sem a regra, os pares divergem.
 
-### 6. Encerramento e consenso
+### 5. Encerramento e consenso
 
 > Adicione um horário (ou duração) de encerramento ao leilão. No horário, o par deve recusar novos lances, anunciar a todos o vencedor que conhece e comparar com os anúncios recebidos dos outros pares para verificar se houve consenso.
 
 - **Aproveitado:** as opções `--duracao` e `--encerra-em`, o monitoramento do encerramento em `peer.py` e a classe `ColetorAnuncios`, que imprime `CONSENSO` ou `DIVERGÊNCIA`.
 - **Adaptado:** quando os pares conhecem horários diferentes, vale o mais cedo. Também adicionamos um aviso quando chega um anúncio de vencedor antes do encerramento local, o que indica relógios dessincronizados.
 
-### 5. Tolerância a falhas
+### 6. Tolerância a falhas
 
 > quando um par cai e é reiniciado, ele perde o estado que estava em memória. como recuperar o maior lance e o horário de encerramento a partir dos outros pares?
 
