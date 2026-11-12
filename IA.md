@@ -74,4 +74,4 @@ As informações obtidas com IA foram conferidas em:
 
 ## Avaliação crítica
 
-A IA acelerou bastante a parte de rede e a organização do código, que levariam mais tempo do que as duas aulas de laboratório permitiam. Os pontos que exigiram mais atenção foram as regras específicas do leilão distribuído; nesses pontos, foi preciso conferir a especificação e testar o comportamento real. O principal aprendizado foi não confiar em resultados descritos pela IA sem executar: ela apresentou previsões como se fossem observações, e só percebemos porque questionamos a origem dos dados.
+A IA acelerou bastante a parte de rede e a organização do código, que levariam mais tempo do que as duas aulas de laboratório permitiam. Os pontos que exigiram mais atenção foram as regras específicas do leilão distribuído; nesses pontos, foi preciso conferir a especificação e testar o comportamento real. O principal aprendizado foi não confiar cegamente nos diagnósticos de comportamento do programa feitos pela IA, como no caso do handshake; para mitigar isso, o comportamento do programa foi revisado após o auxílio da ferramenta.
