@@ -257,8 +257,6 @@ Saída obtida nos testes com `--sem-desempate`:
   DIVERGÊNCIA: Peer_2 discorda(m) do meu resultado.
 ```
 
-**Resultado observado no laboratório:** _(preencher)_
-
 ### Sincronização de relógios
 
 O encerramento usa o relógio **local** de cada máquina. Se os relógios estiverem diferentes, um peer encerra antes do outro e pode recusar um lance que outro aceitou. O programa avisa quando recebe um anúncio de vencedor antes do próprio encerramento (`[AVISO] Pelo meu relógio ainda faltam X s...`). Para observar isso, ajustem o relógio de uma das máquinas em alguns segundos. Esse é o problema da aula de sincronização de relógios (Cristian, Berkeley, NTP): o relógio de Lamport resolve a **ordem** dos eventos, mas não o **horário** real.
